@@ -1,6 +1,6 @@
 <template>
   <div>
-     <ul v-show="this.$store.state.isShow">
+     <ul>
          <router-link tag="li" to="/films" activeClass="active">电影</router-link>
          <router-link tag="li" to="/center" activeClass="active">影院</router-link>
          <router-link tag="li" to="/home" activeClass="active">我的</router-link>
