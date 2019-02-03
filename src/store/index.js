@@ -11,8 +11,7 @@ const store = new Vuex.Store({
       count: 0,
       height:"1112222",
       isShow:true,
-      datalist:[],
-      isHid:true
+      datalist:[]
     },
     actions:{
         getComingsoon(store){
@@ -40,21 +39,14 @@ const store = new Vuex.Store({
     mutations: {
       swiperHeight(state, payload){
         //   console.log(payload)
-          state.count = payload
-          console.log(this.state.count)
+          this.state.count = payload
+        //   console.log(this.state.count)
       },
       setDatalist(state, payload){
         state.datalist = payload
         // console.log(state.datalist,67)
         // console.log(payload,60)
 
-      },
-      hideMaizuoTabbar(state, payload){
-        state.isHid = false;
-          //  console.log(payload)
-      },
-      showMaizuoTabbar(state, payload){
-        state.isHid = true
       }
     }
   })
